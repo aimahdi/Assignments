@@ -12,13 +12,17 @@ for ($i = 1; $i <= $n; $i++) {
     for ($j = 1; $j <= $columnPerLine; $j++) {
         if ($j <= $spaces) {
             echo " ";
-        } else if ($j >= $spaces) {
+        } else if ($j >= $spaces && $j <= ($spaces + $totalStarForThisRow)) {
+            echo "*";
+        }
+
+        /*($j >= $spaces) {
             while ($totalStarForThisRow != 0) {
                 echo "*";
                 $j++;
                 $totalStarForThisRow--;
             }
-        }
+        }*/
     }
     echo "<br>";
 }
