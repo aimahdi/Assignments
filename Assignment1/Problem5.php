@@ -1,8 +1,8 @@
 <?php
 
-$input = 62343;
+$input = -100020;
 
-$temp = $input;
+$temp = $input < 0 ? $input * -1 : $input;
 
 $sum = 0;
 
